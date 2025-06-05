@@ -22,3 +22,4 @@ Libraries: Java Swing (for UI)
 4. Navigate to source folder: cd NBA\ Scanner/src
 5. Compile program: javac Scan.java
 6. Run the program: java Scan
+7. Enjoy!
