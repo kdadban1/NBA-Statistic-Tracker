@@ -16,10 +16,6 @@ Libraries: Java Swing (for UI)
 
 ## Instructions for Use
 
-1. Clone (or download as .zip): git clone https://github.com/kdadban1/NBA_Statistic_Tracker.git
-2. Navigate to project folder: cd NBA_Statistic_Tracker
-3. Unzip the folder: unzip Scanner.zip
-4. Navigate to source folder: cd NBA\ Scanner/src
-5. Compile program: javac Scan.java
-6. Run the program: java Scan
-7. Enjoy!
+1. Clone (or download as .zip): git clone https://github.com/kdadban1/NBA_Stati$
+2. Navigate to project folder: cd NBA-Statistic-Tracker/src
+3. Run the program: java Scan
