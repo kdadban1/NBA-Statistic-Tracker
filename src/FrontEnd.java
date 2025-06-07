@@ -1,18 +1,15 @@
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.awt.Color;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Arrays;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 public class FrontEnd extends JPanel {
@@ -28,6 +25,7 @@ public class FrontEnd extends JPanel {
 	private BufferedImage fImage; // To hold the image
 	private HashMap<String, Rectangle> buttons; // Store buttons with their bounds
 	private HashMap<String, Integer> nums; // store the value of the stat
+
 	public FrontEnd() {
 		setLayout(null);
 		setBackground(new Color(21, 24, 44)); // Set the background color
@@ -414,7 +412,7 @@ public class FrontEnd extends JPanel {
 	}
 	private void loadImage(String input) {
 		try {
-			fImage = ImageIO.read(new File("src/images/" + input + ".png"));
+			fImage = ImageIO.read(new File("images/" + input + ".png"));
 		} catch (IOException e) {
 			System.err.println("Image Unavailable");
 			fImage = null;
@@ -422,7 +420,7 @@ public class FrontEnd extends JPanel {
 	}
 	public boolean checkPlayer(String playerName) {
 		try {
-			Scanner scanner = new Scanner(new File("NBA STAT REAL - Sheet1.csv"));
+			Scanner scanner = new Scanner(new File("data/Sheet.csv"));
 			while (scanner.hasNextLine()) {
 				String[] row = scanner.nextLine().split(","); // Split by commas
 				// lowercase and trim name
@@ -441,7 +439,7 @@ public class FrontEnd extends JPanel {
 	}
 	public String getTeam(String playerName) {
 		try {
-			Scanner scanner = new Scanner(new File("NBA STAT REAL - Sheet1.csv"));
+			Scanner scanner = new Scanner(new File("data/Sheet.csv"));
 			String team = null;
 			while (scanner.hasNextLine()) {
 				String[] row = scanner.nextLine().split(","); // Split by commas
@@ -461,7 +459,7 @@ public class FrontEnd extends JPanel {
 	}
 	public String getStat(String playerName, int num) {
 		try {
-			Scanner scanner = new Scanner(new File("NBA STAT REAL - Sheet1.csv"));
+			Scanner scanner = new Scanner(new File("data/Sheet.csv"));
 			String stat = null;
 			while (scanner.hasNextLine()) {
 				String[] row = scanner.nextLine().split(","); // Split by commas
