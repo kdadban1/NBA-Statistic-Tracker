@@ -14,7 +14,7 @@ IDE: Eclipse
 
 Libraries: Java Swing (for UI)
 
-## Instructions for Use
+## Instructions for Use on Terminal
 
 1. Clone (or download as .zip): git clone https://github.com/kdadban1/NBA_Statistic-Tracker
 2. Navigate to project folder: cd NBA-Statistic-Tracker
